@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Birthday Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onclick="window.location.reload()">
+    <div class="cake-container">
+        <div class="cake-layer layer-3"></div>
+        <div class="cake-layer layer-2"></div>
+        <div class="cake-layer layer-1"></div>
+        <div class="candles-container">
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+    </div>
+        <svg class="curved-text" viewBox="0 0 500 500">
+            <defs>
+                <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="red"/>
+                    <stop offset="16.67%" stop-color="orange"/>
+                    <stop offset="33.33%" stop-color="yellow"/>
+                    <stop offset="50%" stop-color="green"/>
+                    <stop offset="66.67%" stop-color="blue"/>
+                    <stop offset="83.33%" stop-color="indigo"/>
+                    <stop offset="100%" stop-color="violet"/>
+                </linearGradient>
+            </defs>
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text>
+                <textPath href="#curve">Happy Birthday!! Sleepy!! \n</textPath>
+            </text>
+        </svg>
+    </div>
+</body>
+</html>
